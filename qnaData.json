@@ -1,14 +1,11 @@
 [
     {
         "question": "What is the capital of India ?",
-        "options": [
-            "Delhi",
-            "Bombay",
-            "Kolkata",
-            "Chennai"
-        ],
         "answer": [
-            "Delhi"
+            {"text" : "Delhi", "select" : true},
+            {"text" : "Bombay", "select" : false},
+            {"text" : "Kolkata", "select" : false},
+            {"text" : "Chennai", "select" : false}
         ],
         "description": "Delhi was made the capital of India on 12th Dec 1911",
         "tags": [
@@ -18,14 +15,11 @@
     },
     {
         "question": "In which year India got its Independence?",
-        "options": [
-            "1950",
-            "1947",
-            "2012",
-            "1785"
-        ],
         "answer": [
-            "1947"
+            {"text" : "1950", "select" : false},
+            {"text" : "1947", "select" : true},
+            {"text" : "2012", "select" : false},
+            {"text" : "1785", "select" : false}
         ],
         "description": "India got its independence from british on Aug 15th 1947",
         "tags": [
@@ -35,14 +29,22 @@
     },
     {
         "question": "Which of the following languages are considered as classical language?",
-        "options": [
-            "Hindi",
-            "Bengali",
-            "Odia",
-            "Tamil"
-        ],
         "answer": [
-            "Odia", "Tamil"
+            {"text" : "Hindi", "select" : false},
+            {"text" : "Bengali", "select" : false},
+            {"text" : "Odia", "select" : true},
+            {"text" : "Tamil", "select" : true}
+        ],
+        "description": "",
+        "tags": [
+            "gk",
+            "india"
+        ]
+    },
+    {
+        "question": "Who is India's current prime minister ?",
+        "answer": [
+            {"val" : "Sri Narendra Modi"}
         ],
         "description": "",
         "tags": [
