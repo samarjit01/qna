@@ -155,15 +155,25 @@ Flask to create the server. Server is deployed in heroku with a proper CI/CD pip
             projectElement += seg3;
 
             var optionsOutput = `<ol type="A">`;
-            $.each(value.options, function (key, value) {
-              optionsOutput += "<li>" + value + "</li>";
+            $.each(value.answer, function (key, value) {
+              if (value.text) {
+                optionsOutput += "<li>" + value.text + "</li>";
+              }
             });
             optionsOutput += "</ol>";
             projectElement += optionsOutput;
             projectElement += seg4;
             var answerOutput = `<ol type="A">`;
             $.each(value.answer, function (key, value) {
-              answerOutput += "<li>" + value + "</li>";
+              if (value.text) {
+                if (value.select) {
+                  answerOutput += `<li style="color:green">` + value.text + `</li>`;
+                } else {
+                  answerOutput += `<li style="color:red">` + value.text + `</li>`;
+                }
+              } else {
+                answerOutput += `<p>` + value.val + `</p>`
+              }
             });
             answerOutput += "</ol>";
             projectElement += answerOutput;
