@@ -32,5 +32,22 @@
             "gk",
             "india"
         ]
+    },
+    {
+        "question": "Which of the following languages are considered as classical language?",
+        "options": [
+            "Hindi",
+            "Bengali",
+            "Odia",
+            "Tamil"
+        ],
+        "answer": [
+            "Odia", "Tamil"
+        ],
+        "description": "",
+        "tags": [
+            "gk",
+            "india"
+        ]
     }
 ]
