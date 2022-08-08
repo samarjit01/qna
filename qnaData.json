@@ -1,0 +1,36 @@
+[
+    {
+        "question": "What is the capital of India ?",
+        "options": [
+            "Delhi",
+            "Bombay",
+            "Kolkata",
+            "Chennai"
+        ],
+        "answer": [
+            "Delhi"
+        ],
+        "description": "Delhi was made the capital of India on 12th Dec 1911",
+        "tags": [
+            "gk",
+            "india"
+        ]
+    },
+    {
+        "question": "In which year India got its Independence?",
+        "options": [
+            "1950",
+            "1947",
+            "2012",
+            "1785"
+        ],
+        "answer": [
+            "1947"
+        ],
+        "description": "India got its independence from british on Aug 15th 1947",
+        "tags": [
+            "gk",
+            "india"
+        ]
+    }
+]

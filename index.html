@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+  <meta name="viewport" content="width=500">
+  <link href="stylesheet.css" rel="stylesheet" type="text/css">
+  <link rel="icon" type="image/png" href="images/iitdwd1.png">
+  <title>Samarjit Pal</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+  <link href='https://fonts.googleapis.com/css2?family=Caveat&family=Quicksand:wght@300&display=swap' rel='stylesheet'
+    type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+  </script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+  </script>
+
+
+  <style>
+    img {
+      max-width: 100%;
+      max-height: 50%;
+      padding-top: 10px;
+    }
+  </style>
+
+
+
+</head>
+
+<body>
+
+  <!-- Navbar starts -->
+  <nav class="navbar fixed-top  navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Samarjit Pal</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav smooth-scroll mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#Experience">Experience <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#Accomplishments">Accomplishments <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#Projects">Projects <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- Navbar ends -->
+
+
+
+  <div class="container">
+    <!-- Projects starts -->
+    <div class="row " style="margin-top:1rem;">
+      <div id="Projects" class="container">
+      </div>
+    </div>
+    <!-- Projects ends -->
+    <div class="row" style="margin-top:10rem;margin-bottom:2rem;font-size: 10px">
+      Author : samarjit pal
+    </div>
+
+  </div>
+  <script>
+    $(document).ready(function () {
+      $.getJSON("https://samarjit01.github.io/qna/qnaData.json",
+        function (data) {
+          var seg1 = `
+            <!-- starts -->
+<div class="row mt-5">
+    <!-- Project -->
+    <div class="card chart-card" style="width: 100%;border-style: none">
+
+      <!-- Card content -->
+      <div class="card-body">
+        <h8 class="card-title">`;
+          var title = `Multiplayer CardGame using SocketIO`
+          var seg2 = `</h8>
+        <h10  class="card-subtitle text-muted font-italic">`
+          var time = `Apr-May 2020`
+          var seg3 = `</h10>
+      </div>
+
+  <!-- Classic tabs -->
+  <div class="classic-tabs">
+    <div class="row">
+  <div class="col-3">
+    <div class="nav flex-column nav-pills ml-4" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      <a class="nav-link active" id="v-pills-Description-tab" data-toggle="pill" href="#v-pills-Description-$id$" role="tab" aria-controls="v-pills-Description" aria-selected="true">Options</a>
+      <a class="nav-link" id="v-pills-People-tab" data-toggle="pill" href="#v-pills-People-$id$" role="tab" aria-controls="v-pills-People" aria-selected="false">Answer</a>
+      <a class="nav-link" id="v-pills-Tools-tab" data-toggle="pill" href="#v-pills-Tools-$id$" role="tab" aria-controls="v-pills-Tools" aria-selected="false">Description</a>
+    </div>
+  </div>
+  <div class="col-9">
+    <div class="tab-content" id="v-pills-tabContent">
+      <div class="tab-pane fade show active" id="v-pills-Description-$id$" role="tabpanel" aria-labelledby="v-pills-Description-tab">
+
+        <p align="justify" class="font-small mx-5">`;
+          var desc = `Real-time card game with four players in a game board. High-level design of backend server was done using proper design patterns and implemented following the SOLID principals and object calisthenics. Python is used for the BE.Using SocketIO messaging, interaction of players is implemented. Used
+Flask to create the server. Server is deployed in heroku with a proper CI/CD pipeline supporting dev app, staging app and production app. SDLC is used to provide high quality service.Frontend is developed using ReactJs. ReactBootstrap is used to support responsive web pages. Containerization was done using docker. Go script is used to start the FE server.`
+          var seg4 = `</p>
+      </div>
+      <div class="tab-pane fade" id="v-pills-People-$id$" role="tabpanel" aria-labelledby="v-pills-People-tab">
+
+        <p align="justify" class="font-small mx-5"><b></b> `
+          var contributor = `Samarjit Pal`;
+          var seg5 = `</p>
+
+      </div>
+      <div class="tab-pane fade" id="v-pills-Tools-$id$" role="tabpanel" aria-labelledby="v-pills-Tools-tab">
+        
+        <p align="justify" class="font-small mx-5">`;
+          var language = `Python(BackEnd) ;  NodeJs , ReactJs (FrontEnd)`;
+          var seg6 = `</p>
+      </div>
+      <div class="tab-pane fade" id="v-pills-Screenshots-$id$" role="tabpanel" aria-labelledby="v-pills-Screenshots-tab">...</div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Card -->
+</div>
+</div>`;
+          $.each(data, function (key, value) {
+            var projectElement = seg1;
+            projectElement += ((key + 1) + ". " + value.question);
+            projectElement += seg2;
+            var tagsOutput = "<br> tags: ";
+            $.each(value.tags, function (key, value) {
+              tagsOutput += " " + value + ",";
+            });
+            tagsOutput = tagsOutput.substring(0, tagsOutput.length - 1);
+            projectElement += tagsOutput;
+            projectElement += seg3;
+
+            var optionsOutput = `<ol type="A">`;
+            $.each(value.options, function (key, value) {
+              optionsOutput += "<li>" + value + "</li>";
+            });
+            optionsOutput += "</ol>";
+            projectElement += optionsOutput;
+            projectElement += seg4;
+            var answerOutput = `<ol type="A">`;
+            $.each(value.answer, function (key, value) {
+              answerOutput += "<li>" + value + "</li>";
+            });
+            answerOutput += "</ol>";
+            projectElement += answerOutput;
+            projectElement += seg5;
+            projectElement += value.description;
+            projectElement += seg6;
+            projectElement = projectElement.replaceAll("$id$", key);
+            $('#Projects').append(projectElement);
+          });
+        });
+    });
+  </script>
+</body>
+
+</html>
